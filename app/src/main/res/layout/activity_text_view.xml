@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.harsh.customtextview.CustomTextViewActivity">
+
+    <com.harsh.customtextview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/themed_text"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:theme="@style/roboto_theme"/>
+
+    <com.harsh.customtextview.CustomTextView
+        android:id="@+id/customTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculus_sans"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:font="@string/font_calculus_sans" />
+
+    <com.harsh.customtextview.CustomTextView
+        android:id="@+id/customTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/roboto_regular"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:font="@string/font_roboto_regular" />
+
+    <Button
+        android:id="@+id/change_to_roboto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Change to Roboto" />
+
+    <Button
+        android:id="@+id/change_to_calculus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Change to Calculus" />
+
+</LinearLayout>
