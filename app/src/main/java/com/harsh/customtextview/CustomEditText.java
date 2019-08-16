@@ -36,7 +36,7 @@ public class CustomEditText extends EditText {
     private void init(AttributeSet attrs) {
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.CustomView);
-            String fontName = a.getString(R.styleable.CustomView_font);
+            String fontName = a.getString(R.styleable.CustomView_fonts);
 
             try {
                 if (fontName != null) {
